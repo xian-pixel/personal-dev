@@ -14,12 +14,15 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>3.0.2</spring-boot.version>
         <mybatis.version>3.0.0</mybatis.version>
-        <mybatis-plus.version>3.5.0</mybatis-plus.version>
+        <mybatis-plus.version>3.5.5</mybatis-plus.version>
         <aliyun-oss.version>3.10.0</aliyun-oss.version>
+        <swagger.version>2.0.2</swagger.version>
+        <jjwt.version>0.12.5</jjwt.version>
     </properties>
     <modules>
         <module>personal-common</module>
         <module>personal-system</module>
+        <module>personal-security</module>
     </modules>
     <dependencies>
 

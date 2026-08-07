@@ -33,3 +33,16 @@ aliyun:
     access-key-id: ${keys.oss-access-key-id}
     access-key-secret: ${keys.oss-access-key-secret}
     bucket-name: ${keys.oss-bucket-name}
+# JWT配置
+jwt:
+  secret: ${keys.jwt-secret}
+  expiration: 7200000 # 过期时间，单位毫秒
+  header: access_token  # JWT头名称
+  prefix: access_token # JWT前缀
+
+# 日志配置
+logging:
+  level:
+    root.zhengyang: debug
+  file:
+      name: D:\IDEA\IDEAProject\personal_detail\logs\personal_detail.log  # 日志文件存储路径

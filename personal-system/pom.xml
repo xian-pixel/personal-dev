@@ -18,10 +18,10 @@
     </properties>
     <!-- personal-system/pom.xml -->
     <dependencies>
-        <!-- 依赖公共模块 -->
+        <!-- 依赖安全模块 -->
         <dependency>
             <groupId>com.zhengyang</groupId>
-            <artifactId>personal-common</artifactId>
+            <artifactId>personal-security</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
@@ -32,12 +32,7 @@
             <artifactId>mysql-connector-j</artifactId>
             <scope>runtime</scope>
         </dependency>
-        <!-- MyBatis-Plus Starter -->
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>${mybatis-plus.version}</version>
-        </dependency>
+
         <!-- Spring Data Redis 等 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -47,6 +42,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <!-- Swagger 文档 (springdoc-openapi, 兼容 Spring Boot 3) -->
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>${swagger.version}</version>
         </dependency>
     </dependencies>
 
